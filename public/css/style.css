@@ -1,0 +1,103 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    flex:1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    text-align: center;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly; 
+    height: 8rem;
+}
+
+.f-info-links, .f-infosocials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-infosocials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem ;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+/* After declairing the entire div containing card as anchor tag */
+.listing-link{
+    text-decoration: none !important;
+}
+
+/* Card Effects */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white !important;
+}
+.btn{
+    opacity: 1;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+
+/* Show Page  */
+.show-buttons{
+    display: flex;
+}
+.show-image{
+    height: 25rem;
+    width: 25rem;
+}
+.edit-btn{
+    margin-right: 1rem;
+    display: block; 
+    background-color: #fe424d !important; 
+    border: none !important; 
+    color: white;
+}
+.delete-button{
+    border: none !important;
+}

@@ -1,0 +1,102 @@
+<% layout("/layots/boilerplate") %>
+<body>
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h1><b>Create Your Listing</b></h1>
+      <form
+        action="/listings"
+        method="post"
+        class="form needs-validation"
+        novalidate
+        enctype="multipart/form-data"
+      >
+        <div class="mb-3">
+          <label for="title" class="form-label">Title:</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Title is Required</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Description:</label>
+          <textarea
+            name="description"
+            id="description"
+            class="form-control"
+            style="resize: none;"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Description is Required</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Upload Image:</label>
+          <input
+            type="file"
+            name="image"
+            id="image"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Atleast 1 image required</div>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price:</label>
+            <input
+              type="number"
+              name="price"
+              id="price"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Price is Required</div>
+          </div>
+
+          <div class="mb-3 col-md-8">
+            <label for="location" class="form-label">Location:</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Location is Required</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="country" class="form-label">Country:</label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Country is Required</div>
+        </div>
+
+        <button
+          class="btn btn-dark"
+          style="
+            display: block;
+            margin: 2rem auto 1rem auto;
+            background-color: #fe424d;
+            border: none;
+            color: white;
+          "
+        >
+          Create
+        </button>
+      </form>
+    </div>
+  </div>
+</body>

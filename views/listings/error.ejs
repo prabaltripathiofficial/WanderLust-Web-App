@@ -1,0 +1,17 @@
+<% layout("/layots/boilerplate") %>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-danger mt-5" role="alert">
+                    <h4 class="alert-heading">Error <%= err.status %>!</h4>
+                    <p><%= err.message %></p>
+                    <hr>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-dark" onclick="history.back()" style="display: block; margin:2rem auto 1rem auto; background-color: #fe424d; border: none; color: white;">Go Back</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
